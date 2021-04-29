@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">NVGUP</string>
+    <!--Page d'acceuil-->
+
+    <string name="home_page_title">Programme entraînement</string>
+    <string name="home_page_programme">Nom des programmes</string>
+    <string name="home_page_programme_description">Description des programmes</string>
+
+    <!--Page d'un programme-->
+    <string name="programme_page_title">un programme</string>
+
+    <!--Page d'un exo du programme-->
+    <string name="exo_title">un exercice du programme</string>
+    <string name="exo_description_title">description exo</string>
+    <string name="exo_description_subtitle">petite description exo</string>
+
+    <!--exo customise-->
+    <string name="item_exo">Nom des exos</string>
+    <string name="item_exo_description">Description des exos</string>
+
+
+</resources> 
