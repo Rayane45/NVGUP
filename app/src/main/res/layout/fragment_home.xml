@@ -20,6 +20,7 @@
         android:layout_marginLeft="20dp"/>
 
     <TextView
+        android:id="@+id/texte_bras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Exercice de bras "
@@ -27,18 +28,20 @@
         android:layout_marginLeft="20dp"/>
     
     <ImageView
+        android:id="@+id/image_bras"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/muscle_bras"/>
 
     <Button
-        android:id="@+id/bouton1"
+        android:id="@+id/button_bras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Démarrer_1" />
 
 
     <TextView
+        android:id="@+id/texte_jambes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=" Exercice de jambes"
@@ -46,12 +49,13 @@
         android:layout_marginLeft="20dp"/>
 
     <ImageView
+        android:id="@+id/image_jambes"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/muscle_jambes"/>
 
     <Button
-        android:id="@+id/bouton2"
+        android:id="@+id/button_jambes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
