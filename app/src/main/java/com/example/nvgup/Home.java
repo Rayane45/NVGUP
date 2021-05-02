@@ -21,8 +21,6 @@ public class Home extends AppCompatActivity {
        super.onCreate(savedInstanceState);
        setContentView(R.layout.fragment_home);
 
-        mTexteBras=findViewById(R.id.texte_bras);
-        mTexteJambes=findViewById(R.id.texte_jambes);
         mButtonBras=findViewById(R.id.button_bras);
         mButtonJambes=findViewById(R.id.button_jambes);
         mImageBras=findViewById(R.id.image_bras);
