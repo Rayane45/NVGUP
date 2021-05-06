@@ -33,12 +33,8 @@ public class Home extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Home.this, Mouvements.class );
                 startActivity(intent);
-            }
-        });
-        mButtonRetour.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
                 finish();
             }
         });
+
 }}

@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mButtonWelcome= (Button) findViewById(R.id.button_welcome);
-
+    
         mButtonWelcome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
