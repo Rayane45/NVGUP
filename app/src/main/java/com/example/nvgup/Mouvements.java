@@ -8,6 +8,6 @@ public class Mouvements extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ensemble_mouvement);
+        setContentView(R.layout.timer);
     }
 }
