@@ -11,13 +11,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.Locale;
 
 public class Timer extends AppCompatActivity {
-    private static final long Start_time_in_millis=600000; // start time (long est comme int avec + de capacité de stockage)
+    long Start_time_in_millis=599000; // start time (long est comme int avec + de capacité de stockage)
     private TextView mTextOnTimer; // creation des variables auxquelles on associera les elements du xml
     private Button mButtonStartStop;
     private Button mButtonReset;
     private CountDownTimer mCountDownTimer;
     private boolean mTimerRunning; // verification si le timer est toujours pas arreté
-    private long mTimerLeftInMillis = Start_time_in_millis; //  association d'une variable au Start_time_in_millis
+    long mTimerLeftInMillis = Start_time_in_millis; //  association d'une variable au Start_time_in_millis
+    private Button mButtonRetour;
 
 
     @Override
@@ -28,6 +29,7 @@ public class Timer extends AppCompatActivity {
         mTextOnTimer = findViewById(R.id.text_on_timer); // association d'une variable au id du element que l'on veut
         mButtonStartStop = findViewById(R.id.button_start_stop);
         mButtonReset=findViewById(R.id.button_reset);
+        mButtonRetour=findViewById(R.id.button_retour);
         mButtonStartStop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -47,6 +49,13 @@ public class Timer extends AppCompatActivity {
             }
         });
         updateCountDownText();
+
+        mButtonRetour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
     private void startTimer(){
         mCountDownTimer = new CountDownTimer(mTimerLeftInMillis,1000) { // CountDownTimer( de base dans AS), il verifie le tps qui reste et il le fait 1 fois par secode
@@ -84,7 +93,7 @@ public class Timer extends AppCompatActivity {
     private void updateCountDownText(){
         int minutes = (int) (mTimerLeftInMillis  /1000) /60; // (int) est utilisé pour forcer une variable de se transformer dans le format de la parantese
         int seconds = (int) (mTimerLeftInMillis  /1000) % 60;
-        String timeLeftFormatted = String.format(Locale.getDefault(),"%2d:%2d",minutes,seconds); // format est utilisé pour afficher les variables d'une fct specifique;
+        String timeLeftFormatted = String.format(Locale.getDefault(),"%1d:%2d",minutes,seconds); // format est utilisé pour afficher les variables d'une fct specifique;
         // % est le symbole de debut de format, 2 sert a definir la longeur, d est le decimal ( pour float c'est f, par exemple)
         mTextOnTimer.setText(timeLeftFormatted); // on mets ce texte dans l'endroit dedié
     }
