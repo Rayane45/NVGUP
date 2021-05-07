@@ -34,6 +34,7 @@ public class Home extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Home.this,Mouvements.class);
                 startActivity(intent);
+                Toast.makeText(Home.this, "Cette couille fonctionne bien",Toast.LENGTH_LONG).show();
             }
         });
         mButtonJambes.setOnClickListener(new View.OnClickListener() {
@@ -41,6 +42,7 @@ public class Home extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Home.this, Timer.class);
                 startActivity(intent);
+                Toast.makeText(Home.this, "Cette couille fonctionne pas et j'ai aucune idée pourquoi",Toast.LENGTH_LONG).show();
             }
         });
         mButtonRetour.setOnClickListener(new View.OnClickListener() {
