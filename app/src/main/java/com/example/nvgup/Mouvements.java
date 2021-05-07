@@ -8,21 +8,23 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Mouvements extends AppCompatActivity {
-    private Button mpageretour;
-
+    private Button mButtonRetour;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.mouvement_bras);
+        setContentView(R.layout.mvt);
 
-        mpageretour=(Button)findViewById(R.id.retour_page);
-        mpageretour.setOnClickListener(new View.OnClickListener() {
+        mButtonRetour=findViewById(R.id.plof);
+
+        mButtonRetour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Mouvements.this, Home.class );
-                startActivity(intent);
                 finish();
             }
         });
+
     }
 }
+
+
+

@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/nevergiuplogo"
         android:label="Never Give Nigga"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -16,12 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Mouvements"
-            android:label="Never Give Nigga" >></activity>
-        <activity android:name=".Home"
-            android:label="Never Give Nigga"></activity>
-        <activity android:name=".Timer"
-            android:label="Never Give Nigga"></activity>
+        <activity android:name=".Timer"/>
+        <activity android:name=".Home"/>
+        <activity android:name=".Mouvements"/>
     </application>
 
 </manifest>

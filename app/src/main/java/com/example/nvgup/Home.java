@@ -6,6 +6,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -31,8 +32,20 @@ public class Home extends AppCompatActivity {
         mButtonBras.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Home.this, Mouvements.class );
+                Intent intent = new Intent(Home.this,Mouvements.class);
                 startActivity(intent);
+            }
+        });
+        mButtonJambes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home.this, Timer.class);
+                startActivity(intent);
+            }
+        });
+        mButtonRetour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 finish();
             }
         });

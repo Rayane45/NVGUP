@@ -19,18 +19,12 @@ public class MainActivity extends AppCompatActivity {
     
         mButtonWelcome.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                // ovuerture de l'activité AjoutEtudiant
+            public void onClick(View view){
                 Intent intent = new Intent(MainActivity.this, Home.class);
                 startActivity(intent);
             }
         });
-    }
-    public void newActivity(){
-        Intent intent=new Intent(this, Home.class);
-        startActivity(intent);
-    }
-}
+    }}
 
 
 
