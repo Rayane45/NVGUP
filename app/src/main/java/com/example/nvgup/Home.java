@@ -42,7 +42,7 @@ public class Home extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Home.this, Timer.class);
                 startActivity(intent);
-                Toast.makeText(Home.this, "Cette couille fonctionne pas et j'ai aucune idée pourquoi",Toast.LENGTH_LONG).show();
+                Toast.makeText(Home.this, "Celle si fonctionne aussi car Rayane veut pas bouger son gros cul et c'est moi qui doit faire fonctionner le bordel",Toast.LENGTH_LONG).show();
             }
         });
         mButtonRetour.setOnClickListener(new View.OnClickListener() {
