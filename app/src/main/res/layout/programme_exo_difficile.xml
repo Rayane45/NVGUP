@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_difficile"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Programme Expert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/pompes_hindu2"
+        android:layout_width="154dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="68dp"
+        android:src="@drawable/pompes_hindu"
+        app:layout_constraintEnd_toStartOf="@+id/nbre_pompes_hindu"
+        app:layout_constraintHorizontal_bias="0.289"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_difficile" />
+
+    <TextView
+        android:id="@+id/nbre_pompes_hindu"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="72dp"
+        android:text="Pompes Hindu X 25"
+        app:layout_constraintBottom_toTopOf="@+id/jumping_jack2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/jumping_jack2"
+        android:layout_width="163dp"
+        android:layout_height="172dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/jumping_jack"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="269dp" />
+
+    <TextView
+        android:id="@+id/nbre_jumpingjacks"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="40dp"
+        android:text="Jumping Jacks X30"
+        app:layout_constraintEnd_toStartOf="@+id/jumping_jack2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="330dp" />
+
+    <ImageView
+        android:id="@+id/pompesdiamants2"
+        android:layout_width="176dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="104dp"
+        android:src="@drawable/pompes_diamant"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nbre_jumpingjacks" />
+
+    <TextView
+        android:id="@+id/nbre_pompes_diamants"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="20dp"
+        android:text="Pompes Diamants X25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pompesdiamants2"
+        app:layout_constraintTop_toBottomOf="@+id/jumping_jack2" />
+
+    <Button
+        android:id="@+id/Start_difficile"
+        android:layout_width="95dp"
+        android:layout_height="55dp"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.927" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/diamantsdifficile"
+        android:layout_width="286dp"
+        android:layout_height="264dp"
+        android:src="@drawable/pompes_diamant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.295" />
+
+    <TextView
+        android:id="@+id/text_diamantsdifficile"
+        android:layout_width="300dp"
+        android:layout_height="145dp"
+        android:layout_marginBottom="120dp"
+        android:text="Commencez en position de pompe. Formez un losange avec vos doigts puis abaissez et relevez votre corps. Pensez à toujours gardez le corps dans une ligne."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jjdifficile"
+        app:layout_constraintVertical_bias="0.228" />
+
+    <TextView
+        android:id="@+id/nbre_jjdifficile"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginBottom="16dp"
+        android:text="Pompes Diamants X25"
+        app:layout_constraintBottom_toTopOf="@+id/jjdifficile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/suivant_difficile3"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Suivant"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
