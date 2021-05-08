@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/jumping_jack"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/jumping_jack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_jumping_jack"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:text="Commencez debout, les pieds joints et les bras sur les côtés, puis sautez en écartant les pieds et les mains au-dessus de la tête.Revenez à la position de départ et répétez le mouvement. Cet exercice fait travailler tout le corps ainsi que de grands groupes de muscles."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/jumping_jack"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/squat_saut"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/squat_saut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jumping_jack" />
+
+    <TextView
+        android:id="@+id/text_squat"
+        android:layout_width="254dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="32dp"
+        android:text="Pour bien débuter vos répétitions, vous vous tenez debout avec les pieds écartés à largeur d’épaules.
+
+Pour le squat, inspirez en poussant le bassin vers l’arrière et en fléchissant vos cuisses, jusqu’à ce qu’elles soient parallèles au sol. Ensuite, pour le saut vertical, expirez en bondissant afin d’aller le plus haut possible.
+
+Veillez à bien atterrir sur l’avant des pieds en amortissant au maximum le choc, pour cela pliez les jambes et poussez les fesses vers l’arrière. Le reste de l’impact est ensuite amorti par vos talons qui touchent à leur tour le sol. Le mouvement est terminé, vous pouvez enchaîner avec d’autres répétitions."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/squat_saut"
+        app:layout_constraintTop_toBottomOf="@+id/text_jumping_jack" />
+
+    <ImageView
+        android:id="@+id/fentes"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/fentes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/squat_saut" />
+
+    <TextView
+        android:id="@+id/text_fentes"
+        android:layout_width="260dp"
+        android:layout_height="236dp"
+        android:layout_marginTop="36dp"
+        android:text="Debout, pieds de la largeur des hanches, mains sur les hanches (vous pouvez mettre vos mains à la taille ou le long du corps) : Faites un grand pas devant vous en gardant le dos droit (l’autre pied reste en place derrière vous); Descendez jusqu’à ce que votre genou opposé frôle le sol (contrôlez la descente pour ne pas taper votre genou au sol); Le tibia de la jambe avancée est perpendiculaire au sol, votre genou au dessus du pied (le genou ne dépasse pas les orteils); Revenez en position initiale et alternez le mouvement de l’autre côté."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/fentes"
+        app:layout_constraintTop_toBottomOf="@+id/text_squat_text" />
+
+    <Button
+        android:id="@+id/retour_jambes"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Acceuil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
