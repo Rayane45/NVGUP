@@ -10,10 +10,12 @@
         android:id="@+id/image_bras"
         android:layout_width="200dp"
         android:layout_height="123dp"
+        android:layout_alignTop="@+id/image_jambes"
+        android:layout_alignBottom="@+id/image_jambes"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="423dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="-5dp"
         android:src="@drawable/muscle_bras"
         android:visibility="visible" />
 

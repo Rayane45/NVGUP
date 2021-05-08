@@ -13,14 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Mouvements extends AppCompatActivity {
     private Button mButtonRetour;
     private Button mSuivant;
-    private ImageView mPompes;
-    private ImageView mBurpees;
-    private ImageView mPompesdec;
-    private ImageView mPompeshin;
-    private TextView mPompesText;
-    private TextView mBurpeesText;
-    private TextView mPompesdecText;
-    private TextView mPompeshinText;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,14 +22,7 @@ public class Mouvements extends AppCompatActivity {
 
         mButtonRetour=(Button)findViewById(R.id.plof);
         mSuivant=(Button)findViewById(R.id.suivant);
-        mPompes=findViewById(R.id.pompes);
-        mBurpees=findViewById(R.id.burpees);
-        mPompesdec=findViewById(R.id.pompes_dec);
-        mPompeshin=findViewById(R.id.pompes_hindu);
-        mPompesText=findViewById(R.id.text_pompes);
-        mBurpeesText=findViewById(R.id.text_burpees);
-        mPompesdecText=findViewById(R.id.text_pompes_dec);
-        mPompeshinText=findViewById(R.id.text_pompes_hindu);
+
 
         mButtonRetour.setOnClickListener(new View.OnClickListener() {
             @Override

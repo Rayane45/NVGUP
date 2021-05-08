@@ -23,10 +23,10 @@ public class Pause1 extends AppCompatActivity {
         mPause1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Intent intent = new Intent(Pause1.this,Mouvements.class);
                 startActivity(intent);
             }
         });
     }
+
 }
