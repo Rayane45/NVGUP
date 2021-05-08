@@ -19,22 +19,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.Locale;
 
 public class ProgrammeFacile extends AppCompatActivity {
-    private TextView tProgrammeFacile;
-    private ImageView Burpees10;
-    private ImageView Pompesrot10;
-    private ImageView Fentes10;
-    private TextView  tBurpees10;
-    private TextView tPompesrot10;
-    private TextView tFentes10;
     private Button mStart;
-    TextView mTimerText;
-    Button mResetButton;
-    ProgressBar mProgressBarRound;
-    public long millisOnTimer=30000;
-    public long returnIndex=millisOnTimer;
-    CountDownTimer mCountDownTimer;
-    int On=0;
-    int updateTimer = 1000;
+
 
 
     @Override
@@ -42,13 +28,6 @@ public class ProgrammeFacile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.programme_exo_facile);
 
-        tProgrammeFacile = findViewById(R.id.text_facile);
-        Burpees10 = findViewById(R.id.burpees2);
-        Pompesrot10 = findViewById(R.id.pompes_rotation2);
-        Fentes10 = findViewById(R.id.fentes2);
-        tBurpees10 = findViewById(R.id.text_burpees);
-        tPompesrot10 = findViewById(R.id.text_pompes_rotation);
-        tFentes10 = findViewById(R.id.text_fentes);
         mStart = (Button) findViewById(R.id.Start_facile);
 
 

@@ -11,12 +11,9 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Home extends AppCompatActivity {
-    private TextView mTexteBras;
-    private TextView mTexteJambes;
+
     private Button mButtonBras;
-    private Button mButtonJambes;
-    private ImageView mImageBras;
-    private ImageView mImageJambes;
+    private Button mButtonJambes;;
     private ImageButton mEasyprog;
     private ImageButton mHardprog;
 
@@ -27,8 +24,6 @@ public class Home extends AppCompatActivity {
 
         mButtonBras=(Button)findViewById(R.id.button_bras);
         mButtonJambes=(Button)findViewById(R.id.button_jambes);
-        mImageBras=findViewById(R.id.image_bras);
-        mImageJambes=findViewById(R.id.image_jambes);
         mEasyprog=(ImageButton)findViewById(R.id.Easy_programme);
         mHardprog=(ImageButton)findViewById(R.id.Hard_programme);
 
