@@ -17,7 +17,6 @@ public class Home extends AppCompatActivity {
     private Button mButtonJambes;
     private ImageView mImageBras;
     private ImageView mImageJambes;
-    private Button mButtonRetour;
     private ImageButton mEasyprog;
     private ImageButton mHardprog;
 
@@ -30,7 +29,6 @@ public class Home extends AppCompatActivity {
         mButtonJambes=(Button)findViewById(R.id.button_jambes);
         mImageBras=findViewById(R.id.image_bras);
         mImageJambes=findViewById(R.id.image_jambes);
-        mButtonRetour=(Button)findViewById(R.id.button_retour);
         mEasyprog=(ImageButton)findViewById(R.id.Easy_programme);
         mHardprog=(ImageButton)findViewById(R.id.Hard_programme);
 
@@ -47,12 +45,6 @@ public class Home extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Home.this, MouvementsJambes.class);
                 startActivity(intent);
-            }
-        });
-        mButtonRetour.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
             }
         });
         mEasyprog.setOnClickListener(new View.OnClickListener() {
