@@ -24,6 +24,7 @@ public class ProgrammeFacile extends AppCompatActivity {
     private TextView tPompes10;
     private TextView tPompesdec10;
     private Button mStart;
+    long TimeUper=1800000;
 
 
     @Override

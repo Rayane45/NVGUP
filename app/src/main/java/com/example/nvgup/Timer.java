@@ -22,10 +22,9 @@ public class Timer extends AppCompatActivity{
     public long millisOnTimer=30000;
     public long returnIndex=millisOnTimer;
     CountDownTimer mCountDownTimer;
-    CountDownTimer mCountDownTimerBar;
     int On=0;
     int updateTimer = 1000;
-    int progressBarUpdate=50;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +35,7 @@ public class Timer extends AppCompatActivity{
         mResetButton=(Button)findViewById(R.id.timer_reset);
         mReturnButton=(Button)findViewById(R.id.timer_retour);
         mProgressBar=(ProgressBar)findViewById(R.id.progress_timer);
+        mProgressBar.getProgressDrawable().setColorFilter(Color.RED,PorterDuff.Mode.SRC_IN);
 
 
 
@@ -72,15 +72,16 @@ public class Timer extends AppCompatActivity{
 
 public void startTimer(){
     On=1;
-    final long[] increase = new long[1];
     mStartButton.setText("Pause");
     mCountDownTimer = new CountDownTimer(millisOnTimer,updateTimer) { // CountDownTimer( de base dans AS), il verifie le tps qui reste et il le fait 1 fois par secode
+        long increase;
         @Override
         public void onTick(long millisUntilFinished) {// fonction de base et qui prends les millisUntilFinished (de base egalement)
+            increase =(100*(updateTimer)/(returnIndex));
+            mProgressBar.incrementProgressBy((int)increase);
             millisOnTimer=millisUntilFinished;
             updateCountDownText();
-            increase[0] =((mProgressBar.getProgress()*updateTimer)/(millisOnTimer));
-            mProgressBar.setProgress((int) (mProgressBar.getProgress()+ increase[0]));
+
         }
         @Override
         public void onFinish() {
@@ -104,10 +105,16 @@ public void stopTimer(){
 public void updateCountDownText(){
         int minutes = (int) (millisOnTimer  /1000) /60; // (int) est utilisé pour forcer une variable de se transformer dans le format de la parantese
         int seconds = (int) (millisOnTimer  /1000) % 60;
-        String timeLeftFormatted = String.format(Locale.getDefault(),"%2d:%2d",minutes,seconds);
-       /* String timeLeftFormatted = String.format(Locale.getDefault(),"%1d:%2d",minutes,seconds); // format est utilisé pour afficher les variables d'une fct specifique;*/
-        // % est le symbole de debut de format, 2 sert a definir la longeur, d est le decimal ( pour float c'est f, par exemple)
-        mTimerText.setText(timeLeftFormatted); // on mets ce texte dans l'endroit dedié
+        if ((int)(millisOnTimer/1000)%60>9) {
+            String timeLeftFormatted = String.format(Locale.getDefault(), "%2d:%2d", minutes, seconds);// format est utilisé pour afficher les variables d'une fct specifique;*/
+            // % est le symbole de debut de format, 2 sert a definir la longeur, d est le decimal ( pour float c'est f, par exemple)
+            mTimerText.setText(timeLeftFormatted); // on mets ce texte dans l'endroit dedié
+        }
+        else{
+            String timeLeftFormatted = String.format(Locale.getDefault(), "%2d:%1d", minutes, seconds);// format est utilisé pour afficher les variables d'une fct specifique;*/
+            // % est le symbole de debut de format, 2 sert a definir la longeur, d est le decimal ( pour float c'est f, par exemple)
+            mTimerText.setText(timeLeftFormatted); // on mets ce texte dans l'endroit dedié
+        }
     }
 
 /*package com.example.nvgup;
