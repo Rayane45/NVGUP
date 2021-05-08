@@ -89,7 +89,7 @@ public void startTimer(){
             mStartButton.setText("Start");
             mStartButton.setVisibility(View.INVISIBLE);
             mResetButton.setVisibility(View.VISIBLE);
-            mProgressBar.setProgress(0);
+            mProgressBar.setProgress(100);
         }
     }.start();// lance le programme dés le debut
     mResetButton.setVisibility(View.INVISIBLE);
@@ -105,15 +105,25 @@ public void stopTimer(){
 public void updateCountDownText(){
         int minutes = (int) (millisOnTimer  /1000) /60; // (int) est utilisé pour forcer une variable de se transformer dans le format de la parantese
         int seconds = (int) (millisOnTimer  /1000) % 60;
-        if ((int)(millisOnTimer/1000)%60>9) {
+        if (seconds>9 && minutes>9) {
             String timeLeftFormatted = String.format(Locale.getDefault(), "%2d:%2d", minutes, seconds);// format est utilisé pour afficher les variables d'une fct specifique;*/
             // % est le symbole de debut de format, 2 sert a definir la longeur, d est le decimal ( pour float c'est f, par exemple)
             mTimerText.setText(timeLeftFormatted); // on mets ce texte dans l'endroit dedié
         }
-        else{
-            String timeLeftFormatted = String.format(Locale.getDefault(), "%2d:%1d", minutes, seconds);// format est utilisé pour afficher les variables d'une fct specifique;*/
+        else if(seconds<9 && minutes>9){
+            String timeLeftFormatted = String.format(Locale.getDefault(), "%2d:0%1d", minutes, seconds);// format est utilisé pour afficher les variables d'une fct specifique;*/
             // % est le symbole de debut de format, 2 sert a definir la longeur, d est le decimal ( pour float c'est f, par exemple)
             mTimerText.setText(timeLeftFormatted); // on mets ce texte dans l'endroit dedié
+        }
+        else if (seconds > 9 && minutes < 9) {
+            String timeLeftFormatted = String.format(Locale.getDefault(), "0%1d:%2d", minutes, seconds);// format est utilisé pour afficher les variables d'une fct specifique;*/
+            // % est le symbole de debut de format, 2 sert a definir la longeur, d est le decimal ( pour float c'est f, par exemple)
+            mTimerText.setText(timeLeftFormatted);
+        }
+        else{
+            String timeLeftFormatted = String.format(Locale.getDefault(), "0%1d:0%1d", minutes, seconds);// format est utilisé pour afficher les variables d'une fct specifique;*/
+            // % est le symbole de debut de format, 2 sert a definir la longeur, d est le decimal ( pour float c'est f, par exemple)
+            mTimerText.setText(timeLeftFormatted);
         }
     }
 
