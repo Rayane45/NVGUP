@@ -43,7 +43,6 @@ public class Mouvements extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Mouvements.this, Home.class);
                 startActivity(intent);
-                Toast.makeText(Mouvements.this, "Daniil est con", Toast.LENGTH_LONG ).show();
             }
         });
         mSuivant.setOnClickListener(new View.OnClickListener() {
@@ -51,7 +50,6 @@ public class Mouvements extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Mouvements.this, Mouvementsbras2.class);
                 startActivity(intent);
-                Toast.makeText(Mouvements.this, "Daniil est idiot", Toast.LENGTH_LONG ).show();
             }
         });
 

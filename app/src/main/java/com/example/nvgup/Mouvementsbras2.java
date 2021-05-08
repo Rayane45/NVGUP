@@ -17,8 +17,8 @@ public class Mouvementsbras2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mvt_bras_2);
 
-        mPrecedant = findViewById(R.id.précèdent);
-        mAcceuil = findViewById(R.id.acceuil);
+        mPrecedant = (Button)findViewById(R.id.précèdent);
+        mAcceuil = (Button)findViewById(R.id.acceuil);
 
         mPrecedant.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,7 +32,6 @@ public class Mouvementsbras2 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Mouvementsbras2.this, Home.class);
                 startActivity(intent);
-                Toast.makeText(Mouvementsbras2.this, "Arrete de mater ttes les meufs que tu croise, laisse les aux assoiffés", Toast.LENGTH_LONG ).show();
             }
         });
     }
