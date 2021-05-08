@@ -11,8 +11,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Mouvements extends AppCompatActivity {
-    private Button mButtonRetour;
-    private Button mSuivant;
+    private Button mButtonRetour; //définition du bouton pour revenir à la page précédante
+    private Button mSuivant; //définition du bouton pour aller à la page suivante
 
 
     @Override
@@ -33,7 +33,7 @@ public class Mouvements extends AppCompatActivity {
         mSuivant.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Mouvements.this, Mouvementsbras2.class);
+                Intent intent = new Intent(Mouvements.this, Mouvementsbras2.class);//aller de la page actuel Mouvements à la page MouvementsBras2
                 startActivity(intent);
             }
         });
