@@ -8,12 +8,12 @@
 
     <ImageView
         android:id="@+id/image_bras"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_width="200dp"
+        android:layout_height="123dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="218dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="423dp"
         android:src="@drawable/muscle_bras"
         android:visibility="visible" />
 
@@ -24,10 +24,10 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
-        android:layout_marginStart="125dp"
-        android:layout_marginTop="348dp"
-        android:text="Exercices Bras"
-        android:fontFamily="@font/water_splash"/>
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="562dp"
+        android:fontFamily="@font/water_splash"
+        android:text="Exercices Bras" />
 
     <ImageView
         android:id="@+id/image_jambes"
@@ -36,8 +36,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="434dp"
+        android:layout_marginStart="245dp"
+        android:layout_marginTop="419dp"
         android:src="@drawable/muscle_jambes" />
 
     <Button
@@ -48,9 +48,9 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="121dp"
-        android:layout_marginLeft="121dp"
-        android:layout_marginBottom="119dp"
+        android:layout_marginStart="219dp"
+        android:layout_marginLeft="219dp"
+        android:layout_marginBottom="122dp"
         android:fontFamily="@font/water_splash"
         android:text="Exercices Jambes" />
 
@@ -65,5 +65,31 @@
         android:textSize="15dp"
         android:text="Return Home"
         android:fontFamily="@font/water_splash"/>
+
+    <ImageButton
+        android:id="@+id/Easy_programme"
+        android:layout_width="163dp"
+        android:layout_height="202dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="216dp"
+        android:layout_marginBottom="464dp"
+        android:src="@drawable/programme_facile" />
+
+    <ImageButton
+        android:id="@+id/Hard_programme"
+        android:layout_width="wrap_content"
+        android:layout_height="215dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-195dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="465dp"
+        android:layout_toEndOf="@+id/Easy_programme"
+        android:src="@drawable/programme_hard" />
 
 </RelativeLayout>
