@@ -115,3 +115,5 @@ public class Pause2 extends AppCompatActivity {
             // d est le decimal ( pour float c'est f, par exemple)
             mTextTimer2.setText(timeLeftFormatted);
 }
+    }
+}
