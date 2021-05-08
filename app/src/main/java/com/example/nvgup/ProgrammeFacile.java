@@ -64,7 +64,7 @@ public class ProgrammeFacile extends AppCompatActivity {
         mProgressBarRound.getProgressDrawable().setColorFilter(Color.MAGENTA, PorterDuff.Mode.SRC_IN);
 
 
-        mStart.setOnClickListener(new View.OnClickListener() {
+    /*    mStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (On==0){
@@ -128,24 +128,24 @@ public class ProgrammeFacile extends AppCompatActivity {
         int minutes = (int) (millisOnTimer  /1000) /60; // (int) est utilisé pour forcer une variable de se transformer dans le format de la parantese
         int seconds = (int) (millisOnTimer  /1000) % 60;
         if (seconds>9 && minutes>9) {
-            String timeLeftFormatted = String.format(Locale.getDefault(), "%2d:%2d", minutes, seconds);// format est utilisé pour afficher les variables d'une fct specifique;*/
+            String timeLeftFormatted = String.format(Locale.getDefault(), "%2d:%2d", minutes, seconds);// format est utilisé pour afficher les variables d'une fct specifique;
             // % est le symbole de debut de format, 2 sert a definir la longeur, d est le decimal ( pour float c'est f, par exemple)
-            mTimerText.setText(timeLeftFormatted); // on mets ce texte dans l'endroit dedié
+           /* mTimerText.setText(timeLeftFormatted); // on mets ce texte dans l'endroit dedié
         }
         else if(seconds<9 && minutes>9){
-            String timeLeftFormatted = String.format(Locale.getDefault(), "%2d:0%1d", minutes, seconds);// format est utilisé pour afficher les variables d'une fct specifique;*/
+            String timeLeftFormatted = String.format(Locale.getDefault(), "%2d:0%1d", minutes, seconds);// format est utilisé pour afficher les variables d'une fct specifique;
             // % est le symbole de debut de format, 2 sert a definir la longeur, d est le decimal ( pour float c'est f, par exemple)
             mTimerText.setText(timeLeftFormatted); // on mets ce texte dans l'endroit dedié
         }
         else if (seconds > 9 && minutes < 9) {
-            String timeLeftFormatted = String.format(Locale.getDefault(), "0%1d:%2d", minutes, seconds);// format est utilisé pour afficher les variables d'une fct specifique;*/
+            String timeLeftFormatted = String.format(Locale.getDefault(), "0%1d:%2d", minutes, seconds);// format est utilisé pour afficher les variables d'une fct specifique;
             // % est le symbole de debut de format, 2 sert a definir la longeur, d est le decimal ( pour float c'est f, par exemple)
             mTimerText.setText(timeLeftFormatted);
         }
         else{
-            String timeLeftFormatted = String.format(Locale.getDefault(), "0%1d:0%1d", minutes, seconds);// format est utilisé pour afficher les variables d'une fct specifique;*/
+            String timeLeftFormatted = String.format(Locale.getDefault(), "0%1d:0%1d", minutes, seconds);// format est utilisé pour afficher les variables d'une fct specifique;
             // % est le symbole de debut de format, 2 sert a definir la longeur, d est le decimal ( pour float c'est f, par exemple)
             mTimerText.setText(timeLeftFormatted);
-        }
+        }*/
     }
 }
