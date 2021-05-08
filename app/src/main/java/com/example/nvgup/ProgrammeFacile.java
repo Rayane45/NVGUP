@@ -21,8 +21,6 @@ import java.util.Locale;
 public class ProgrammeFacile extends AppCompatActivity {
     private Button mStart;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
