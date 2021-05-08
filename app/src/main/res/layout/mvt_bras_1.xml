@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/plof"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/suivant"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <Button
+        android:id="@+id/suivant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="suivant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <ImageView
+        android:id="@+id/pompes"
+        android:layout_width="143dp"
+        android:layout_height="133dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/pompes_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_pompes"
+        android:layout_width="226dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="12dp"
+        android:text="Placez-vous en position pompes standard, les mains alignées avec les épaules.Fléchissez les coudes et faîtes une pompe, retournez à la position d’origine et répétez l’exercice."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/burpees"
+        android:layout_width="153dp"
+        android:layout_height="133dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/burpees_1"
+        app:layout_constraintEnd_toStartOf="@+id/text_burpees"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pompes" />
+
+    <TextView
+        android:id="@+id/text_burpees"
+        android:layout_width="224dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Commencez en position debout. Maintenez vous en position de squat et posez vos mains sur le sol. Redressez vos jambes et vos bras en même temps. Revenez vos jambes et vos bras en même temps. Revenez immédiatement à la position de squat. Sautez depuis cette position. Le burpee es un exercice de force et aérobic complet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_pompes" />
+
+    <ImageView
+        android:id="@+id/pompes_dec"
+        android:layout_width="161dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/pompes_dce"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/burpees" />
+
+    <TextView
+        android:id="@+id/text_pompes_dec"
+        android:layout_width="187dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="24dp"
+        android:text="Placez -vous en position de pompes standards mais positionner une main devant l’autre.Effectuez une pompe et inversez la position des mains, Pensez à bien garder le corps dans une ligne."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.327"
+        app:layout_constraintStart_toEndOf="@+id/pompes_dec"
+        app:layout_constraintTop_toBottomOf="@+id/text_burpees" />
+
+    <ImageView
+        android:id="@+id/pompes_hindu"
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/pompes_hindu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pompes_dec" />
+
+    <TextView
+        android:id="@+id/text_pompes_hindu"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="24dp"
+        android:text="Placez vos pieds et vos mains au sol et levez les fesses de manière à former un « V » inversé. Ensuite fléchissez les coudes pour faire descendre votre corps vers le sol. Lorsque votre corps est à proximité du sol, levez le torse aussi loin que possible. Retournez à votre position initiale et répétez l’exercice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toEndOf="@+id/pompes_hindu"
+        app:layout_constraintTop_toBottomOf="@+id/text_pompes_dec" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
