@@ -10,8 +10,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.nvgup.fragments.MouvementsBras2;
-
 public class Mouvements extends AppCompatActivity {
     private Button mButtonRetour;
     private Button mSuivant;
@@ -51,7 +49,7 @@ public class Mouvements extends AppCompatActivity {
         mSuivant.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Mouvements.this, MouvementsBras2.class);
+                Intent intent = new Intent(Mouvements.this, Mouvementsbras2.class);
                 startActivity(intent);
                 Toast.makeText(Mouvements.this, "Daniil est idiot", Toast.LENGTH_LONG ).show();
             }
