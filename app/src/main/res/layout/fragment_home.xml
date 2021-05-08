@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
 
 
     <ImageView
@@ -75,7 +76,7 @@
     <ImageButton
         android:id="@+id/Hard_programme"
         android:layout_width="wrap_content"
-        android:layout_height="215dp"
+        android:layout_height="197dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="-195dp"
