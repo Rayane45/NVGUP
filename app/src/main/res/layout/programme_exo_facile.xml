@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_facile"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Programme débutant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/burpees2"
+        android:layout_width="145dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/burpees_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_facile" />
+
+    <TextView
+        android:id="@+id/nbre_burpees"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:text="Burpees X 10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.412"
+        app:layout_constraintStart_toEndOf="@+id/burpees2"
+        app:layout_constraintTop_toBottomOf="@+id/text_facile" />
+
+    <ImageView
+        android:id="@+id/pompes_rotation2"
+        android:layout_width="145dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/pompes_rotation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nbre_burpees" />
+
+    <TextView
+        android:id="@+id/nbre_pompes_rot"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="60dp"
+        android:text="Pompes Rotation x10"
+        app:layout_constraintEnd_toStartOf="@+id/pompes_rotation2"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/burpees2" />
+
+    <ImageView
+        android:id="@+id/fentes2"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/fentes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nbre_pompes_rot" />
+
+    <TextView
+        android:id="@+id/nbre_fentes"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="28dp"
+        android:text="Fentes X15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toEndOf="@+id/fentes2"
+        app:layout_constraintTop_toBottomOf="@+id/pompes_rotation2" />
+
+    <ImageView
+        android:id="@+id/pompes2"
+        android:layout_width="125dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="28dp"
+        android:src="@drawable/pompes_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nbre_fentes" />
+
+
+    <TextView
+        android:id="@+id/nbre_pompes"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="64dp"
+        android:text="Pompes X10"
+        app:layout_constraintHorizontal_bias="0.721"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fentes2" />
+
+    <ImageView
+        android:id="@+id/pompes_dec2"
+        android:layout_width="208dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/pompes_dce"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nbre_pompes" />
+
+    <TextView
+        android:id="@+id/nbre_pompes_dec"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="16dp"
+        android:text="Pompes décalés X10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.972"
+        app:layout_constraintStart_toEndOf="@+id/pompes_dec2"
+        app:layout_constraintTop_toBottomOf="@+id/pompes2" />
+
+    <Button
+        android:id="@+id/Start_facile"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
