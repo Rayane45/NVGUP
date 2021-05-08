@@ -23,11 +23,13 @@
         android:id="@+id/button_bras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button_jambes"
+        android:layout_alignBottom="@+id/button_jambes"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginStart="17dp"
-        android:layout_marginTop="562dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
         android:fontFamily="@font/water_splash"
         android:text="Exercices Bras" />
 
