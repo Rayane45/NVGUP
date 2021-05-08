@@ -1,40 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".Timer">
 
     <Button
-        android:id="@+id/Pause1"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="104dp"
-        android:text="Suivant"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:id="@+id/timer_start_stop"
+        android:layout_width="115dp"
+        android:layout_height="71dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="332dp"
+        android:fontFamily="@font/water_splash"
+        android:text="Start"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/timer_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_above="@+id/timer_start_stop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="138dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="80sp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/timer_reset"
+        android:layout_width="115dp"
+        android:layout_height="71dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="443dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="227dp"
+        android:fontFamily="@font/water_splash"
+        android:text="Reset"
+        android:textSize="15sp"
+        android:visibility="invisible"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/timer_retour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/Pause1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="106dp"
+        android:text="Retour"
+        android:fontFamily="@font/water_splash"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ProgressBar
+        android:id="@+id/progress_timer"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="279dp"
+        android:layout_height="76dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="206dp"
+        android:progress="0" />
+
+</RelativeLayout>
