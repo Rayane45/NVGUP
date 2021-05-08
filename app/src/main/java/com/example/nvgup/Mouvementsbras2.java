@@ -23,9 +23,7 @@ public class Mouvementsbras2 extends AppCompatActivity {
         mPrecedant.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Mouvementsbras2.this, Mouvements.class);
-                startActivity(intent);
-                Toast.makeText(Mouvementsbras2.this, "Daniil est con2", Toast.LENGTH_LONG ).show();
+                finish();
             }
         });
 
@@ -34,7 +32,7 @@ public class Mouvementsbras2 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Mouvementsbras2.this, Home.class);
                 startActivity(intent);
-                Toast.makeText(Mouvementsbras2.this, "Daniil est con3", Toast.LENGTH_LONG ).show();
+                Toast.makeText(Mouvementsbras2.this, "Arrete de mater ttes les meufs que tu croise, laisse les aux assoiffés", Toast.LENGTH_LONG ).show();
             }
         });
     }

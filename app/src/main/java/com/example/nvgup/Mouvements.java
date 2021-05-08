@@ -27,8 +27,8 @@ public class Mouvements extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mvt_bras_1);
 
-        mButtonRetour=findViewById(R.id.plof);
-        mSuivant=findViewById(R.id.suivant);
+        mButtonRetour=(Button)findViewById(R.id.plof);
+        mSuivant=(Button)findViewById(R.id.suivant);
         mPompes=findViewById(R.id.pompes);
         mBurpees=findViewById(R.id.burpees);
         mPompesdec=findViewById(R.id.pompes_dec);
