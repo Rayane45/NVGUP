@@ -12,10 +12,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.Locale;
 
 public class Timer extends AppCompatActivity{
-    Button startButton;
-    Button resetButton;
-    Button returnButton;
-    TextView timerText;
+    Button mStartButton;
+    Button mResetButton;
+    Button mReturnButton;
+    TextView mTimerText;
     public long millisOnTimer=30000;
     public long returnIndex=millisOnTimer;
     CountDownTimer mCountDownTimer;
@@ -25,12 +25,12 @@ public class Timer extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.timer);
-        startButton=(Button)findViewById(R.id.timer_start_stop);
-        timerText= (TextView) findViewById(R.id.timer_txt);
-        resetButton=(Button)findViewById(R.id.timer_reset);
-        returnButton=(Button)findViewById(R.id.timer_retour);
+        mStartButton=(Button)findViewById(R.id.timer_start_stop);
+        mTimerText= (TextView) findViewById(R.id.timer_txt);
+        mResetButton=(Button)findViewById(R.id.timer_reset);
+        mReturnButton=(Button)findViewById(R.id.timer_retour);
 
-        startButton.setOnClickListener(new View.OnClickListener()
+        mStartButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v) {
@@ -42,16 +42,16 @@ public class Timer extends AppCompatActivity{
                 }
             }
         });
-        resetButton.setOnClickListener(new View.OnClickListener() {
+        mResetButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 millisOnTimer=returnIndex;
                 updateCountDownText();
-                resetButton.setVisibility(View.INVISIBLE);
-                startButton.setVisibility(View.VISIBLE);
+                mResetButton.setVisibility(View.INVISIBLE);
+                mStartButton.setVisibility(View.VISIBLE);
             }
         });
-        returnButton.setOnClickListener(new View.OnClickListener() {
+        mReturnButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
@@ -61,7 +61,7 @@ public class Timer extends AppCompatActivity{
 
 public void startTimer(){
     On=1;
-    startButton.setText("Pause");
+    mStartButton.setText("Pause");
     mCountDownTimer = new CountDownTimer(millisOnTimer,1000) { // CountDownTimer( de base dans AS), il verifie le tps qui reste et il le fait 1 fois par secode
         @Override
         public void onTick(long millisUntilFinished) {// fonction de base et qui prends les millisUntilFinished (de base egalement)
@@ -71,20 +71,20 @@ public void startTimer(){
         @Override
         public void onFinish() {
             On=0;
-            startButton.setText("Start");
-            startButton.setVisibility(View.INVISIBLE);
-            resetButton.setVisibility(View.VISIBLE);
+            mStartButton.setText("Start");
+            mStartButton.setVisibility(View.INVISIBLE);
+            mResetButton.setVisibility(View.VISIBLE);
         }
     }.start();// lance le programme dés le debut
-    resetButton.setVisibility(View.INVISIBLE);
-    startButton.setVisibility(View.VISIBLE);
+    mResetButton.setVisibility(View.INVISIBLE);
+    mStartButton.setVisibility(View.VISIBLE);
 }
 
 public void stopTimer(){
     mCountDownTimer.cancel(); // on arrete le timer, mais le temps qui nous se garde car il est stocké dans le mTimerLeftInMillis
     On=0;
-    startButton.setText("Start");
-    resetButton.setVisibility(View.VISIBLE);
+    mStartButton.setText("Start");
+    mResetButton.setVisibility(View.VISIBLE);
 }
 public void updateCountDownText(){
         int minutes = (int) (millisOnTimer  /1000) /60; // (int) est utilisé pour forcer une variable de se transformer dans le format de la parantese
@@ -92,7 +92,7 @@ public void updateCountDownText(){
         String timeLeftFormatted = String.format(Locale.getDefault(),"%2d:%2d",minutes,seconds);
        /* String timeLeftFormatted = String.format(Locale.getDefault(),"%1d:%2d",minutes,seconds); // format est utilisé pour afficher les variables d'une fct specifique;*/
         // % est le symbole de debut de format, 2 sert a definir la longeur, d est le decimal ( pour float c'est f, par exemple)
-        timerText.setText(timeLeftFormatted); // on mets ce texte dans l'endroit dedié
+        mTimerText.setText(timeLeftFormatted); // on mets ce texte dans l'endroit dedié
 
     }
 
