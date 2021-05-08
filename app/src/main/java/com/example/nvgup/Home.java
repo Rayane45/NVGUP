@@ -18,6 +18,9 @@ public class Home extends AppCompatActivity {
     private ImageView mImageBras;
     private ImageView mImageJambes;
     private Button mButtonRetour;
+    private ImageButton mEasyprog;
+    private ImageButton mHardprog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
        super.onCreate(savedInstanceState);
@@ -28,6 +31,8 @@ public class Home extends AppCompatActivity {
         mImageBras=findViewById(R.id.image_bras);
         mImageJambes=findViewById(R.id.image_jambes);
         mButtonRetour=(Button)findViewById(R.id.button_retour);
+        mEasyprog=(ImageButton)findViewById(R.id.Easy_programme);
+        mHardprog=(ImageButton)findViewById(R.id.Hard_programme);
 
         mButtonBras.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,7 +44,7 @@ public class Home extends AppCompatActivity {
         mButtonJambes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Home.this, ProgrammeFacile.class);
+                Intent intent = new Intent(Home.this, MouvementsJambes.class);
                 startActivity(intent);
             }
         });
@@ -47,6 +52,20 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
+            }
+        });
+        mEasyprog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home.this, ProgrammeFacile.class);
+                startActivity(intent);
+            }
+        });
+        mHardprog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home.this, ProgrammeFacile.class);
+                startActivity(intent);
             }
         });
 

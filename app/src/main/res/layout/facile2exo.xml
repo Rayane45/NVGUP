@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/pompesrot1facile"
+        android:layout_width="286dp"
+        android:layout_height="264dp"
+        android:src="@drawable/pompes_rotation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.295" />
+
+    <TextView
+        android:id="@+id/text_pompesrotfacile"
+        android:layout_width="291dp"
+        android:layout_height="127dp"
+        android:layout_marginBottom="156dp"
+        android:text="Commencez comme pour faire des pompes. Effectuez une descente et au moment où vous remontez, faites tourner le haut de votre corps et tendez votre bras droit vers le haut. Répétez l’exercice avec l’autre bras. C’est un très bon exercice pour le torse, les épaules, les bras et le corps en général."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.228" />
+
+    <TextView
+        android:id="@+id/nbre_pompesrotfacile"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginBottom="16dp"
+        android:text="Pompes Rotations X 10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/suivant_facile2"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Suivant"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

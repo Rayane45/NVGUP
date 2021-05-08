@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/fentesfacile"
+        android:layout_width="286dp"
+        android:layout_height="264dp"
+        android:src="@drawable/fentes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.197" />
+
+    <TextView
+        android:id="@+id/text_fentesfacile"
+        android:layout_width="341dp"
+        android:layout_height="202dp"
+        android:layout_marginBottom="148dp"
+        android:text="Debout, pieds de la largeur des hanches, mains sur les hanches (vous pouvez mettre vos mains à la taille ou le long du corps) : Faites un grand pas devant vous en gardant le dos droit (l’autre pied reste en place derrière vous); Descendez jusqu’à ce que votre genou opposé frôle le sol (contrôlez la descente pour ne pas taper votre genou au sol); Le tibia de la jambe avancée est perpendiculaire au sol, votre genou au dessus du pied (le genou ne dépasse pas les orteils); Revenez en position initiale et alternez le mouvement de l’autre côté."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.228" />
+
+    <TextView
+        android:id="@+id/nbre_fentesfacile"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Fentes X 15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="42dp" />
+
+    <Button
+        android:id="@+id/terminé1"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Fini"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

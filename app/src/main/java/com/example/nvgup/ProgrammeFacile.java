@@ -23,13 +23,9 @@ public class ProgrammeFacile extends AppCompatActivity {
     private ImageView Burpees10;
     private ImageView Pompesrot10;
     private ImageView Fentes10;
-    private ImageView Pompes10;
-    private ImageView Pompesdec10;
     private TextView  tBurpees10;
     private TextView tPompesrot10;
     private TextView tFentes10;
-    private TextView tPompes10;
-    private TextView tPompesdec10;
     private Button mStart;
     TextView mTimerText;
     Button mResetButton;
@@ -50,13 +46,9 @@ public class ProgrammeFacile extends AppCompatActivity {
         Burpees10=findViewById(R.id.burpees2);
         Pompesrot10=findViewById(R.id.pompes_rotation2);
         Fentes10=findViewById(R.id.fentes2);
-        Pompes10=findViewById(R.id.pompes2);
-        Pompesdec10=findViewById(R.id.pompes_dec2);
         tBurpees10=findViewById(R.id.text_burpees);
         tPompesrot10=findViewById(R.id.text_pompes_rotation);
         tFentes10=findViewById(R.id.text_fentes);
-        tPompes10=findViewById(R.id.text_pompes);
-        tPompesdec10=findViewById(R.id.text_pompes_dec);
         mStart=(Button)findViewById(R.id.Start_facile);
         mProgressBarRound=(ProgressBar)findViewById(R.id.progess_debutant);
         mResetButton=(Button)findViewById(R.id.reset_time);
