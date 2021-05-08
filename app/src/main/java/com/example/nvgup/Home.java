@@ -37,7 +37,6 @@ public class Home extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Home.this,Mouvements.class);
                 startActivity(intent);
-                Toast.makeText(Home.this, "Rayane est con XD", Toast.LENGTH_LONG).show();
             }
         });
         mButtonJambes.setOnClickListener(new View.OnClickListener() {
