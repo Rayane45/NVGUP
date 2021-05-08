@@ -19,7 +19,7 @@ public class Home extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) { //visibilité protégé pour manipuler que les objets que dans la classe
-       super.onCreate(savedInstanceState); //mettre le code initiale
+       super.onCreate(savedInstanceState); //mettre le code initiale (onCreate execute le code a l'intérieur au chargement de la page)
        setContentView(R.layout.fragment_home); //afficher l'xml associer
 
         mButtonBras=(Button)findViewById(R.id.button_bras); //assimile le bouton défini à son dientifiant xml
