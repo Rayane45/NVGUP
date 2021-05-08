@@ -27,6 +27,12 @@
         <activity android:name=".Pause1"/>
         <activity android:name=".Pause2"/>
         <activity android:name=".PompesRotationsfacile"/>
+        <activity android:name=".PompesDiamantsDifficiles"/>
+        <activity android:name=".JumpingsJacksDifficiles"/>
+        <activity android:name=".Pause3"/>
+        <activity android:name=".Pause4"/>
+        <activity android:name=".ProgrammeDifficile"/>
+        <activity android:name=".PompesHinduDifficile"/>
     </application>
 
 </manifest>

@@ -41,7 +41,7 @@ public class Pause2 extends AppCompatActivity {
         mPause2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {// bouton passage entre les activités
-                Intent intent = new Intent(Pause2.this,PompesRotationsfacile.class);
+                Intent intent = new Intent(Pause2.this,Fentesfacile.class);
                 startActivity(intent);
                 millisOnTimer=returnIndex;// on réinitialise la valeur du temps de départ
                 mProgressBar2.setProgress(0);// on remets la valeur de ProgressBar à 0

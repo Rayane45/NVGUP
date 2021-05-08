@@ -9,9 +9,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class PompesHinduDifficile extends AppCompatActivity {
-    private  TextView tPompesHindudifficile;
-    private ImageView tPompesHindudifficile10;
-    private TextView tPompesHindudifficile3;
+
     private Button mPompesHindudifficile;; //Après première exo afficher le temps de pause 3
 
     @Override
@@ -19,9 +17,6 @@ public class PompesHinduDifficile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.difficile1exo);
 
-        tPompesHindudifficile=findViewById(R.id.nbre_pompeshindu);
-        tPompesHindudifficile10=findViewById(R.id.pompeshindudifficile);
-        tPompesHindudifficile3=findViewById(R.id.text_pompeshindudifficile);
         mPompesHindudifficile=(Button)findViewById(R.id.suivant_difficile1);
 
         mPompesHindudifficile.setOnClickListener(new View.OnClickListener() {
