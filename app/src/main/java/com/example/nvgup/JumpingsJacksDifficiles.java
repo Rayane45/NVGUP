@@ -9,9 +9,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class JumpingsJacksDifficiles extends AppCompatActivity {
-    private  TextView tjjdifficile;
-    private ImageView tjjfficile10;
-    private TextView tjjdifficile3;
+
     private Button mjjdifficile;; //Après deuxième exo afficher le temps de pause 4
 
     @Override
@@ -19,9 +17,6 @@ public class JumpingsJacksDifficiles extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.difficile2exo);
 
-        tjjdifficile=findViewById(R.id.nbre_jjdifficile);
-        tjjfficile10=findViewById(R.id.jjdifficile);
-        tjjdifficile3=findViewById(R.id.text_jjdifficile);
         mjjdifficile=(Button)findViewById(R.id.suivant_difficile2);
 
         mjjdifficile.setOnClickListener(new View.OnClickListener() {

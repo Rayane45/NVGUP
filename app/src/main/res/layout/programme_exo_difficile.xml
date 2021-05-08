@@ -25,10 +25,12 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="68dp"
         android:src="@drawable/pompes_hindu"
+        app:layout_constraintBottom_toTopOf="@+id/nbre_jumpingjacks"
         app:layout_constraintEnd_toStartOf="@+id/nbre_pompes_hindu"
-        app:layout_constraintHorizontal_bias="0.289"
+        app:layout_constraintHorizontal_bias="0.16"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_difficile" />
+        app:layout_constraintTop_toBottomOf="@+id/text_difficile"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/nbre_pompes_hindu"
@@ -44,10 +46,11 @@
         android:id="@+id/jumping_jack2"
         android:layout_width="163dp"
         android:layout_height="172dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="28dp"
         android:src="@drawable/jumping_jack"
+        app:layout_constraintBottom_toTopOf="@+id/pompesdiamants2"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="269dp" />
+        app:layout_constraintTop_toBottomOf="@+id/pompes_hindu2" />
 
     <TextView
         android:id="@+id/nbre_jumpingjacks"
@@ -55,10 +58,11 @@
         android:layout_height="20dp"
         android:layout_marginStart="40dp"
         android:text="Jumping Jacks X30"
+        app:layout_constraintBottom_toTopOf="@+id/Start_difficile"
         app:layout_constraintEnd_toStartOf="@+id/jumping_jack2"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="330dp" />
+        app:layout_constraintTop_toBottomOf="@+id/text_difficile" />
 
     <ImageView
         android:id="@+id/pompesdiamants2"
@@ -72,8 +76,8 @@
 
     <TextView
         android:id="@+id/nbre_pompes_diamants"
-        android:layout_width="120dp"
-        android:layout_height="20dp"
+        android:layout_width="165dp"
+        android:layout_height="25dp"
         android:layout_marginTop="68dp"
         android:layout_marginEnd="20dp"
         android:text="Pompes Diamants X25"
