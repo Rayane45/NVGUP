@@ -34,12 +34,12 @@
         android:id="@+id/nbre_pompesrotfacile"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginTop="76dp"
-        android:layout_marginBottom="16dp"
         android:text="Pompes Rotations X 10"
+        app:layout_constraintBottom_toTopOf="@+id/pompesrot1facile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/suivant_facile2"
@@ -50,6 +50,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:text="Suivant"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/water_splash"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

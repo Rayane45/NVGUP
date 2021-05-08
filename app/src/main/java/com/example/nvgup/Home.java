@@ -11,13 +11,9 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Home extends AppCompatActivity {
-    private TextView mTexteBras;
-    private TextView mTexteJambes;
+
     private Button mButtonBras;
-    private Button mButtonJambes;
-    private ImageView mImageBras;
-    private ImageView mImageJambes;
-    private Button mButtonRetour;
+    private Button mButtonJambes;;
     private ImageButton mEasyprog;
     private ImageButton mHardprog;
 
@@ -28,9 +24,6 @@ public class Home extends AppCompatActivity {
 
         mButtonBras=(Button)findViewById(R.id.button_bras);
         mButtonJambes=(Button)findViewById(R.id.button_jambes);
-        mImageBras=findViewById(R.id.image_bras);
-        mImageJambes=findViewById(R.id.image_jambes);
-        mButtonRetour=(Button)findViewById(R.id.button_retour);
         mEasyprog=(ImageButton)findViewById(R.id.Easy_programme);
         mHardprog=(ImageButton)findViewById(R.id.Hard_programme);
 
@@ -39,7 +32,6 @@ public class Home extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Home.this,Mouvements.class);
                 startActivity(intent);
-                Toast.makeText(Home.this, "Rayane est con XD", Toast.LENGTH_LONG).show();
             }
         });
         mButtonJambes.setOnClickListener(new View.OnClickListener() {
@@ -47,12 +39,6 @@ public class Home extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Home.this, MouvementsJambes.class);
                 startActivity(intent);
-            }
-        });
-        mButtonRetour.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
             }
         });
         mEasyprog.setOnClickListener(new View.OnClickListener() {

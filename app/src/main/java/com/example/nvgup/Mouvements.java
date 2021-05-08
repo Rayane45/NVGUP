@@ -27,8 +27,7 @@ public class Mouvements extends AppCompatActivity {
         mButtonRetour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Mouvements.this, Home.class);
-                startActivity(intent);
+                finish();
             }
         });
         mSuivant.setOnClickListener(new View.OnClickListener() {

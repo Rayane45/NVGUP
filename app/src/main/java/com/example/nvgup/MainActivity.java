@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view){
                 Intent intent = new Intent(MainActivity.this, Home.class);
                 startActivity(intent);
+                Toast.makeText(MainActivity.this, "Merci d'avoir choisi cette application! On vous aime!", Toast.LENGTH_LONG).show();
             }
         });
     }}

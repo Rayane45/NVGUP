@@ -10,9 +10,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class PompesRotationsfacile extends AppCompatActivity {
-    private  TextView tPompesRotfacile;
-    private ImageView tPompesRotfacile10;
-    private TextView tPompesRotdesfacile;
+
     private Button mPompesRotfacile1; //Après deuxième exo afficher le temps de pause 2
 
     @Override
@@ -20,9 +18,6 @@ public class PompesRotationsfacile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.facile2exo);
 
-        tPompesRotfacile=findViewById(R.id.nbre_pompesrotfacile);
-        tPompesRotfacile10=findViewById(R.id.pompesrot1facile);
-        tPompesRotdesfacile=findViewById(R.id.text_pompesrotfacile);
         mPompesRotfacile1=(Button)findViewById(R.id.suivant_facile2);
 
         mPompesRotfacile1.setOnClickListener(new View.OnClickListener() {

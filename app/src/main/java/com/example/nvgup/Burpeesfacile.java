@@ -10,9 +10,6 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Burpeesfacile extends AppCompatActivity {
-    private  TextView tBurpeesfacile;
-    private ImageView tBurpeesfacile10;
-    private TextView tBurpeesdesfacile;
     private Button mButtonfacile1; //Après première exo afficher le temps de pause 1
 
     @Override
@@ -20,9 +17,6 @@ public class Burpeesfacile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.facile1exo);
 
-        tBurpeesfacile=findViewById(R.id.nbre_burpeesfacile);
-        tBurpeesfacile10=findViewById(R.id.burpees1facile);
-        tBurpeesdesfacile=findViewById(R.id.text_burpeesfacile);
         mButtonfacile1=(Button)findViewById(R.id.suivant_facile1);
 
         mButtonfacile1.setOnClickListener(new View.OnClickListener() {

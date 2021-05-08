@@ -34,14 +34,14 @@
         android:id="@+id/nbre_burpeesfacile"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginTop="76dp"
         android:layout_marginBottom="16dp"
         android:text="Burpees X 10"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/burpees1facile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.44"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_facile" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/suivant_facile1"
@@ -52,6 +52,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:text="Suivant"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/water_splash"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

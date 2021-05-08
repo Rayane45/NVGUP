@@ -34,10 +34,12 @@
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:text="Fentes X 15"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/fentesfacile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="42dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/terminé1"
@@ -48,6 +50,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:text="Fini"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/water_splash"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
