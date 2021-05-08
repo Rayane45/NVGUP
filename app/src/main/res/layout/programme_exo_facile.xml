@@ -4,7 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    >
 
     <TextView
         android:id="@+id/text_facile"
@@ -15,7 +17,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.455"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/black" />
 
     <ImageView
         android:id="@+id/burpees2"
@@ -36,7 +39,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.303"
         app:layout_constraintStart_toEndOf="@+id/burpees2"
-        app:layout_constraintTop_toBottomOf="@+id/text_facile" />
+        app:layout_constraintTop_toBottomOf="@+id/text_facile"
+        android:textColor="@color/black"/>
 
 
     <ImageView
@@ -59,7 +63,8 @@
         app:layout_constraintEnd_toStartOf="@+id/pompes_rotation2"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/burpees2" />
+        app:layout_constraintTop_toBottomOf="@+id/burpees2"
+        android:textColor="@color/black"/>
 
     <ImageView
         android:id="@+id/fentes2"
@@ -80,7 +85,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.525"
         app:layout_constraintStart_toEndOf="@+id/fentes2"
-        app:layout_constraintTop_toBottomOf="@+id/pompes_rotation2" />
+        app:layout_constraintTop_toBottomOf="@+id/pompes_rotation2"
+        android:textColor="@color/black"/>
 
     <Button
         android:id="@+id/Start_facile"
@@ -105,6 +111,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.41"
         app:layout_constraintVertical_bias="0.595"
-        android:fontFamily="@font/crochet_pattern_bold"/>
+        android:fontFamily="@font/crochet_pattern_bold"
+        android:textColor="@color/black"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

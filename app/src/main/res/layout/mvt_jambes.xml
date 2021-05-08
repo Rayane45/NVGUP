@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/beige">
 
     <ImageView
         android:id="@+id/jumping_jack"
@@ -24,7 +25,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/jumping_jack"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/black"/>
 
     <ImageView
         android:id="@+id/squat_saut"
@@ -49,7 +51,8 @@ Veillez à bien atterrir sur l’avant des pieds en amortissant au maximum le ch
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/squat_saut"
-        app:layout_constraintTop_toBottomOf="@+id/text_jumping_jack" />
+        app:layout_constraintTop_toBottomOf="@+id/text_jumping_jack"
+        android:textColor="@color/black"/>
 
     <ImageView
         android:id="@+id/fentes"
@@ -70,7 +73,8 @@ Veillez à bien atterrir sur l’avant des pieds en amortissant au maximum le ch
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/fentes"
-        app:layout_constraintTop_toBottomOf="@+id/text_squat" />
+        app:layout_constraintTop_toBottomOf="@+id/text_squat"
+        android:textColor="@color/black"/>
 
     <Button
         android:id="@+id/retour_jambes"

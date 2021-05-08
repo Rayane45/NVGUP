@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/beige">
 
     <Button
         android:id="@+id/précèdent"
@@ -54,7 +55,8 @@
         android:layout_marginTop="12dp"
         android:text="Placez vous en position de pompes standards, lorsque vous relevez le torse, fléchissez et relevez une jambe sur le côté. Retournez à votre position initiale et répétez l’exercice de l’autre côté . Pensez à bien garder le corps dans une ligne."
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/black"/>
 
     <ImageView
         android:id="@+id/pompes_rotation"
@@ -75,7 +77,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/pompes_rotation"
-        app:layout_constraintTop_toBottomOf="@+id/text_pompes_spider" />
+        app:layout_constraintTop_toBottomOf="@+id/text_pompes_spider"
+        android:textColor="@color/black"/>
 
     <ImageView
         android:id="@+id/pompes_diamants"
@@ -94,6 +97,7 @@
         android:text="Commencez en position de pompe. Formez un losange avec vos doigts puis abaissez et relevez votre corps. Pensez à toujours gardez le corps dans une ligne."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/pompes_diamants"
-        app:layout_constraintTop_toBottomOf="@+id/text_pompes_rotation" />
+        app:layout_constraintTop_toBottomOf="@+id/text_pompes_rotation"
+        android:textColor="@color/black"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

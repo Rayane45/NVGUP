@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/beige">
 
     <Button
         android:id="@+id/plof"
@@ -54,7 +55,9 @@
         android:layout_marginTop="12dp"
         android:text="Placez-vous en position pompes standard, les mains alignées avec les épaules.Fléchissez les coudes et faîtes une pompe, retournez à la position d’origine et répétez l’exercice."
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/black"
+         />
 
     <ImageView
         android:id="@+id/burpees"
@@ -79,7 +82,8 @@
         android:layout_marginEnd="8dp"
         android:text="Commencez en position debout. Maintenez vous en position de squat et posez vos mains sur le sol. Redressez vos jambes et vos bras en même temps. Revenez vos jambes et vos bras en même temps. Revenez immédiatement à la position de squat. Sautez depuis cette position. Le burpee es un exercice de force et aérobic complet"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_pompes" />
+        app:layout_constraintTop_toBottomOf="@+id/text_pompes"
+        android:textColor="@color/black"/>
 
     <ImageView
         android:id="@+id/pompes_dec"
@@ -100,7 +104,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.327"
         app:layout_constraintStart_toEndOf="@+id/pompes_dec"
-        app:layout_constraintTop_toBottomOf="@+id/text_burpees" />
+        app:layout_constraintTop_toBottomOf="@+id/text_burpees"
+        android:textColor="@color/black"/>
 
     <ImageView
         android:id="@+id/pompes_hindu"
@@ -121,7 +126,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.652"
         app:layout_constraintStart_toEndOf="@+id/pompes_hindu"
-        app:layout_constraintTop_toBottomOf="@+id/text_pompes_dec" />
+        app:layout_constraintTop_toBottomOf="@+id/text_pompes_dec"
+        android:textColor="@color/black"/>
 
 
 

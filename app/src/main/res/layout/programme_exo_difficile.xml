@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/beige">
 
     <TextView
         android:id="@+id/text_difficile"
@@ -15,6 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.455"
         app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/black"
         app:layout_constraintTop_toTopOf="parent" />
 
 
@@ -40,6 +42,7 @@
         android:layout_marginBottom="72dp"
         android:text="Pompes Hindu X 25"
         app:layout_constraintBottom_toTopOf="@+id/jumping_jack2"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
@@ -62,6 +65,7 @@
         app:layout_constraintEnd_toStartOf="@+id/jumping_jack2"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@+id/text_difficile" />
 
     <ImageView
@@ -83,6 +87,7 @@
         android:text="Pompes Diamants X25"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/pompesdiamants2"
+        android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@+id/jumping_jack2" />
 
     <Button

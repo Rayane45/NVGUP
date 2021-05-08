@@ -4,7 +4,8 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Timer">
+    tools:context=".Pause1"
+    android:background="@color/beige">
 
     <Button
         android:id="@+id/timer_start_stop1"
@@ -25,6 +26,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="138dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
+        android:fontFamily="@font/falling_sky_bold_oblique"
         android:textSize="80sp" />
 
     <Button

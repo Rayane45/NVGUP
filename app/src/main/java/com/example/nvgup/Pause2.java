@@ -30,7 +30,7 @@ public class Pause2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.pause1);
+        setContentView(R.layout.pause2);
 
         mProgressBar2=(ProgressBar)findViewById(R.id.progress_timer2);// liasion des variables aux ID que l'on souhaite
         mStart2=(Button)findViewById(R.id.timer_start_stop2);

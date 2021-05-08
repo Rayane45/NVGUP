@@ -4,18 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/beige">
 
     <TextView
         android:id="@+id/app_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginBottom="89dp"
+        android:fontFamily="@font/smart_watch_bold"
         android:text="Never Give Up"
+        android:textColor="@color/black"
         android:textSize="25dp"
-        android:fontFamily="@font/smart_watch_light"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -40,9 +44,9 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="74dp"
-        android:layout_marginEnd="155dp"
-        android:layout_marginBottom="235dp"
-        android:text="Welcome"
-        android:fontFamily="@font/water_splash"/>
+        android:layout_marginEnd="149dp"
+        android:layout_marginBottom="237dp"
+        android:fontFamily="@font/water_splash"
+        android:text="Welcome" />
 
 </RelativeLayout>
