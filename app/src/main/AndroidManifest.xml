@@ -20,6 +20,7 @@
         <activity android:name=".Home"/>
         <activity android:name=".Mouvements"/>
         <activity android:name=".Mouvementsbras2"/>
+        <activity android:name=".MouvementsJambes"/>
     </application>
 
 </manifest>

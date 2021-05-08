@@ -34,8 +34,7 @@ public class MouvementsJambes extends AppCompatActivity {
         mRetourJambes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MouvementsJambes.this, Home.class);
-                startActivity(intent);
+                finish();
             }
         });
     }
