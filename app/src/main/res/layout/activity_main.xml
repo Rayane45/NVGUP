@@ -15,7 +15,7 @@
         android:layout_marginTop="20dp"
         android:text="Never Give Up"
         android:textSize="25dp"
-        android:fontFamily="@font/water_splash"
+        android:fontFamily="@font/smart_watch_light"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -42,6 +42,7 @@
         android:layout_marginTop="74dp"
         android:layout_marginEnd="155dp"
         android:layout_marginBottom="235dp"
-        android:text="Welcome" />
+        android:text="Welcome"
+        android:fontFamily="@font/water_splash"/>
 
 </RelativeLayout>

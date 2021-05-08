@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976"
-        android:fontFamily="@font/fisherman_bold"/>
+        android:fontFamily="@font/water_splash"/>
 
     <Button
         android:id="@+id/suivant"
@@ -30,7 +30,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976"
-        android:fontFamily="@font/fisherman_bold"/>
+        android:fontFamily="@font/water_splash"/>
 
     <ImageView
         android:id="@+id/pompes"
@@ -54,8 +54,7 @@
         android:layout_marginTop="12dp"
         android:text="Placez-vous en position pompes standard, les mains alignées avec les épaules.Fléchissez les coudes et faîtes une pompe, retournez à la position d’origine et répétez l’exercice."
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/burpees"
