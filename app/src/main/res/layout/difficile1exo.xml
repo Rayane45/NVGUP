@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/pompeshindudifficile"
+        android:layout_width="286dp"
+        android:layout_height="264dp"
+        android:src="@drawable/pompes_hindu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.295" />
+
+    <TextView
+        android:id="@+id/text_pompeshindudifficile"
+        android:layout_width="300dp"
+        android:layout_height="145dp"
+        android:layout_marginBottom="120dp"
+        android:text="Placez vos pieds et vos mains au sol et levez les fesses de manière à former un « V » inversé. Ensuite fléchissez les coudes pour faire descendre votre corps vers le sol. Lorsque votre corps est à proximité du sol, levez le torse aussi loin que possible. Retournez à votre position initiale et répétez l’exercice"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pompeshindudifficile"
+        app:layout_constraintVertical_bias="0.228" />
+
+    <TextView
+        android:id="@+id/nbre_pompeshindu"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginBottom="16dp"
+        android:text="Pompes Hindu X25"
+        app:layout_constraintBottom_toTopOf="@+id/pompeshindudifficile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/suivant_difficile1"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Suivant"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
