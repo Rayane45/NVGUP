@@ -1,11 +1,13 @@
 package com.example.nvgup;
 
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.os.LocaleList;
+import android.graphics.Color;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,10 +18,14 @@ public class Timer extends AppCompatActivity{
     Button mResetButton;
     Button mReturnButton;
     TextView mTimerText;
+    ProgressBar  mProgressBar;
     public long millisOnTimer=30000;
     public long returnIndex=millisOnTimer;
     CountDownTimer mCountDownTimer;
+    CountDownTimer mCountDownTimerBar;
     int On=0;
+    int updateTimer = 1000;
+    int progressBarUpdate=50;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +35,10 @@ public class Timer extends AppCompatActivity{
         mTimerText= (TextView) findViewById(R.id.timer_txt);
         mResetButton=(Button)findViewById(R.id.timer_reset);
         mReturnButton=(Button)findViewById(R.id.timer_retour);
+        mProgressBar=(ProgressBar)findViewById(R.id.progress_timer);
+
+
+
 
         mStartButton.setOnClickListener(new View.OnClickListener()
         {
@@ -47,6 +57,7 @@ public class Timer extends AppCompatActivity{
             public void onClick(View v) {
                 millisOnTimer=returnIndex;
                 updateCountDownText();
+                mProgressBar.setProgress(0);
                 mResetButton.setVisibility(View.INVISIBLE);
                 mStartButton.setVisibility(View.VISIBLE);
             }
@@ -61,12 +72,15 @@ public class Timer extends AppCompatActivity{
 
 public void startTimer(){
     On=1;
+    final long[] increase = new long[1];
     mStartButton.setText("Pause");
-    mCountDownTimer = new CountDownTimer(millisOnTimer,1000) { // CountDownTimer( de base dans AS), il verifie le tps qui reste et il le fait 1 fois par secode
+    mCountDownTimer = new CountDownTimer(millisOnTimer,updateTimer) { // CountDownTimer( de base dans AS), il verifie le tps qui reste et il le fait 1 fois par secode
         @Override
         public void onTick(long millisUntilFinished) {// fonction de base et qui prends les millisUntilFinished (de base egalement)
             millisOnTimer=millisUntilFinished;
             updateCountDownText();
+            increase[0] =((mProgressBar.getProgress()*updateTimer)/(millisOnTimer));
+            mProgressBar.setProgress((int) (mProgressBar.getProgress()+ increase[0]));
         }
         @Override
         public void onFinish() {
@@ -74,6 +88,7 @@ public void startTimer(){
             mStartButton.setText("Start");
             mStartButton.setVisibility(View.INVISIBLE);
             mResetButton.setVisibility(View.VISIBLE);
+            mProgressBar.setProgress(0);
         }
     }.start();// lance le programme dés le debut
     mResetButton.setVisibility(View.INVISIBLE);
@@ -93,7 +108,6 @@ public void updateCountDownText(){
        /* String timeLeftFormatted = String.format(Locale.getDefault(),"%1d:%2d",minutes,seconds); // format est utilisé pour afficher les variables d'une fct specifique;*/
         // % est le symbole de debut de format, 2 sert a definir la longeur, d est le decimal ( pour float c'est f, par exemple)
         mTimerText.setText(timeLeftFormatted); // on mets ce texte dans l'endroit dedié
-
     }
 
 /*package com.example.nvgup;

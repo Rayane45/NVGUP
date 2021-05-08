@@ -39,7 +39,7 @@ public class Home extends AppCompatActivity {
         mButtonJambes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Home.this, MouvementsJambes.class);
+                Intent intent = new Intent(Home.this, Timer.class);
                 startActivity(intent);
             }
         });
